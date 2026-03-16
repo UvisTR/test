@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sınav Takvimi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📅 Sınav Takvimi</h1>
+        
+        <div class="filters">
+            <input type="text" id="searchInput" placeholder="Sınıf veya Ders ara...">
+            
+            <!-- İstenilen Onay Kutusu (Checkbox) -->
+            <div class="checkbox-container">
+                <input type="checkbox" id="detayliListe">
+                <label for="detayliListe">Detaylı Listeyi Göster (Öğretmen/Sınıf Bilgisi)</label>
+            </div>
+        </div>
+
+        <div id="loading">Veriler yükleniyor...</div>
+        
+        <table id="examTable">
+            <thead>
+                <!-- Başlıklar JavaScript ile dinamik olarak doldurulacak -->
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
